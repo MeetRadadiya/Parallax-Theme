@@ -4,17 +4,241 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Poppins";
   background-color: #333;
 }
 
-.logo {
-  display: inline-block;
-  width: 200px;
-}
-.logo img {
+header {
+  padding: 15px 0;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 0;
   width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+header nav .logo {
+  display: inline-block;
+  width: 100px;
+}
+header nav .logo img {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0 20px;
+}
+header nav ul .search a {
+  font-size: 18px;
+  padding: 0 24px;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+main .bg_img {
+  position: absolute;
+  z-index: 1;
+  width: 2800px;
+  top: calc(50% - 390px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+}
+main .fog_7 {
+  position: absolute;
+  z-index: 2;
+  width: 1900px;
+  top: calc(50% - 100px);
+  left: calc(50% + 300px);
+  transform: translate(-50%, -50%);
+}
+main .mountain_10 {
+  position: absolute;
+  z-index: 3;
+  width: 870px;
+  top: calc(50% + 69px);
+  left: calc(50% + 230px);
+  transform: translate(-50%, -50%);
+}
+main .fog_6 {
+  position: absolute;
+  z-index: 4;
+  top: calc(50% + 95px);
+  left: calc(50% + 7px);
+  width: 1833px;
+  transform: translate(-50%, -50%);
+}
+main .mountain_9 {
+  position: absolute;
+  z-index: 5;
+  top: calc(50% + 119px);
+  width: 463px;
+  left: calc(50% - 457px);
+  transform: translate(-50%, -50%);
+}
+main .mountain_8 {
+  position: absolute;
+  z-index: 6;
+  top: calc(50% + 96px);
+  width: 786px;
+  left: calc(50% - 202px);
+  transform: translate(-50%, -50%);
+}
+main .fog_5 {
+  position: absolute;
+  z-index: 7;
+  top: calc(50% + 171px);
+  left: calc(50% + 29px);
+  width: 449px;
+  transform: translate(-50%, -50%);
+}
+main .mountain_7 {
+  position: absolute;
+  z-index: 8;
+  width: 515px;
+  top: calc(50% + 134px);
+  left: calc(50% + 305px);
+  transform: translate(-50%, -50%);
+}
+main .text {
+  position: absolute;
+  z-index: 9;
+  top: calc(50% - 130px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+main .text h2 {
+  font-weight: 100;
+  font-size: 100px;
+  line-height: 1;
+}
+main .text h1 {
+  font-weight: 800;
+  font-size: 110px;
+  line-height: 1;
+}
+main .mountain_6 {
+  position: absolute;
+  z-index: 10;
+  top: calc(50% + 86.5px);
+  width: 383.5px;
+  left: calc(50% + 590px);
+  transform: translate(-50%, -50%);
+}
+main .fog_4 {
+  position: absolute;
+  z-index: 11;
+  top: calc(50% + 242px);
+  left: calc(50% - 64px);
+  width: 543px;
+  transform: translate(-50%, -50%);
+}
+main .mountain_5 {
+  position: absolute;
+  z-index: 12;
+  top: calc(50% + 269px);
+  width: 583px;
+  left: calc(50% + 130px);
+  transform: translate(-50%, -50%);
+}
+main .fog_3 {
+  position: absolute;
+  z-index: 13;
+  top: calc(50% + 149px);
+  left: calc(50% - 28px);
+  width: 1435px;
+  transform: translate(-50%, -50%);
+}
+main .mountain_4 {
+  position: absolute;
+  z-index: 14;
+  top: calc(50% + 221px);
+  width: 717px;
+  left: calc(50% - 381.5px);
+  transform: translate(-50%, -50%);
+}
+main .mountain_3 {
+  position: absolute;
+  z-index: 15;
+  top: calc(50% + 133px);
+  left: calc(50% + 736px);
+  width: 419px;
+  transform: translate(-50%, -50%);
+}
+main .fog_2 {
+  position: absolute;
+  z-index: 16;
+  top: calc(50% + 177px);
+  left: calc(50% - 30px);
+  width: 1418px;
+  transform: translate(-50%, -50%);
+}
+main .mountain_2 {
+  position: absolute;
+  z-index: 17;
+  top: calc(50% + 188px);
+  left: calc(50% + 412px);
+  width: 625px;
+  transform: translate(-50%, -50%);
+}
+main .mountain_1 {
+  position: absolute;
+  z-index: 18;
+  top: calc(50% + 91.5px);
+  left: calc(50% - 631px);
+  width: 450px;
+  transform: translate(-50%, -50%);
+}
+main .sun_rays {
+  position: absolute;
+  z-index: 19;
+  top: 0;
+  right: 0;
+  width: 595px;
+}
+main .black_shadow {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+main .fog_2 {
+  position: absolute;
+  z-index: 21;
+  width: 1600px;
+  top: calc(100% + 335px);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* devanagari */
