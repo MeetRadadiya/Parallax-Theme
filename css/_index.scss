@@ -1,0 +1,12 @@
+body {
+  font-family: $primary_font;
+  background-color: $primary_theme;
+}
+
+.logo {
+  display: inline-block;
+  width: 200px;
+  img {
+    width: 100%;
+  }
+}
